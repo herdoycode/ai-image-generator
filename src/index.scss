@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+:root {
+  --primary-color: #0089a5;
+  --bg-gradient: linear-gradient(90deg, #001d38, #0089a5);
+  --bg-gradient-hover: linear-gradient(90deg, #0089a5, #001d38);
+  --box-shadow: 0px 2px 10px 0px rgba(0, 137, 165, 0.6);
+  --box-shadow2: 0px 0px 8px 0px rgba(0, 137, 165, 0.3);
+  --bg-primary: #f1f5ff;
+  --bg-secondary: #d4dee6;
+  --text-color: #273038;
+  --heading-color: #03070a;
+  --border-color: 1px solid #ddd;
+}
+
+[data-theme="dark"] {
+  --primary-color: #007a92;
+  --bg-primary: #0d121f;
+  --bg-secondary: #1e2636;
+  --bg-gradient: linear-gradient(90deg, #00284d, #007a92);
+  --box-shadow: 0px 2px 10px 0px #0089a5;
+  --text-color: #8e99a3;
+  --heading-color: #bccbda;
+  --border-color: 1px solid #344252;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background: var(--bg-primary);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--heading-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  background: var(--bg-gradient);
+  padding: 1.4rem 2rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  &:hover {
+    background: var(--bg-gradient-hover);
+  }
+}
+
+input,
+textarea {
+  padding: 1.3rem;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  width: 100%;
+  border: var(--border-color);
+  background: var(--bg-primary);
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: calc(1.5rem * 0.5);
+  padding-left: calc(1.5rem * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm,
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1320px;
+  }
+}
